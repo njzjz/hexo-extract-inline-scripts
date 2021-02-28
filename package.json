@@ -1,6 +1,6 @@
 {
   "name": "hexo-extract-inline-scripts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extract inline scripts to separate files",
   "main": "index.js",
   "scripts": {
