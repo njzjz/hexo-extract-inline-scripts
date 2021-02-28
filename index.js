@@ -28,7 +28,7 @@ hexo.extend.filter.register('after_generate', function (data) {
                         script_hashes.push(hash);
                         hexo.route.set(js_path, p2);
                     }
-                    return `<script src="${assets_prefix}/${js_path}"${p1}></script>`;
+                    return `<script src="${assets_prefix}${js_path}"${p1}></script>`;
                 }));
             });
             resolve();
