@@ -1,0 +1,19 @@
+{
+  "name": "hexo-extract-inline-scripts",
+  "version": "0.0.1",
+  "description": "Extract inline scripts to separate files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njzjz/hexo-extract-inline-scripts.git"
+  },
+  "author": "Jinzhe Zeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/njzjz/hexo-extract-inline-scripts/issues"
+  },
+  "homepage": "https://github.com/njzjz/hexo-extract-inline-scripts#readme"
+}
