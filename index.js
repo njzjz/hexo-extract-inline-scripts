@@ -5,6 +5,7 @@
  *                  if the value is empty, hexo.config.root will be used.
  */
 const crypto = require('crypto');
+const { parse } = require('node-html-parser');
 
 hexo.extend.filter.register('after_generate', function (data) {
     const hexo = this;
@@ -20,6 +21,11 @@ hexo.extend.filter.register('after_generate', function (data) {
                 // detect inline script
                 hexo.route.set(path, htmlContent.replace(reg, function (str, p1, p2) {
                     if (!p2) {
+                        return str;
+                    }
+                    const script_type = parse(str).firstChild.getAttribute('type');
+                    if (script_type && (["application/ecmascript", "application/javascript", "text/ecmascript", "text/javascript"].indexOf(script_type) < 0)){
+                        // not javascript
                         return str;
                     }
                     var hash = crypto.createHash('md5').update(p2).digest('hex');

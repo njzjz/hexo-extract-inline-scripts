@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/njzjz/hexo-extract-inline-scripts/issues"
   },
-  "homepage": "https://github.com/njzjz/hexo-extract-inline-scripts#readme"
+  "homepage": "https://github.com/njzjz/hexo-extract-inline-scripts#readme",
+  "dependencies": {
+    "node-html-parser": "^3.2.0"
+  }
 }
